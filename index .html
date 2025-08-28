@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simko Web - AI-Powered Digital Marketing Agency in Delhi | 300%+ ROI Growth</title>
+    <meta name="description" content="Leading AI-powered digital marketing agency in Delhi. Specializing in SEO, PPC, Social Media, Web Development with AI automation. Delivering 300%+ ROI growth since 2022.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: #1E3A8A;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #F97316;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #F97316;
+        }
+
+        .cta-button {
+            background: #F97316;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #EA580C;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #F97316;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #F3F4F6;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1E3A8A;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #6B7280;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #F97316;
+            margin-bottom: 1rem;
+        }
+
+        .ai-badge {
+            background: linear-gradient(45deg, #F97316, #EA580C);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* AI Advantage Section */
+        .ai-advantage {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+            color: white;
+        }
+
+        .ai-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .ai-feature {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Results Section */
+        .results {
+            padding: 80px 0;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .result-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 4px solid #F97316;
+        }
+
+        .result-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1E3A8A;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 80px 0;
+            background: #F3F4F6;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .team-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: #E5E7EB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #6B7280;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .stars {
+            color: #F59E0B;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #1E3A8A;
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.9);
+        }
+
+        .contact-info {
+            padding: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #F97316;
+            margin-right: 1rem;
+            width: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .services-grid,
+            .ai-features,
+            .results-grid,
+            .team-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* ROI Calculator Styles */
+        .roi-calculator {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .calculator-inputs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .calculator-inputs input {
+            padding: 0.75rem;
+            border: 2px solid #E5E7EB;
+            border-radius: 5px;
+        }
+
+        .roi-result {
+            background: linear-gradient(45deg, #F97316, #EA580C);
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">SimkoWeb</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ai-advantage">AI Solutions</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Free Audit</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="animate">AI-Powered Digital Marketing That Delivers 300%+ ROI Growth</h1>
+            <p class="subtitle">Delhi's Leading Digital Marketing Agency - Combining Traditional Expertise with Cutting-Edge AI Technology</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">300%</div>
+                    <div class="stat-label">Average ROI Growth</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">₹2Cr+</div>
+                    <div class="stat-label">Revenue Generated</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+
+            <a href="#contact" class="cta-button" style="font-size: 1.2rem; padding: 1rem 2rem;">Get Your Free Marketing Audit</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Digital Marketing Services</h2>
+            <p class="section-subtitle">Comprehensive digital marketing solutions powered by AI technology for maximum results</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <span class="ai-badge">AI-Enhanced</span>
+                    <h3>Search Engine Optimization (SEO)</h3>
+                    <p>AI-powered keyword research and content optimization to rank higher on Google. Our advanced algorithms analyze competitor strategies and market trends for maximum visibility.</p>
+                    <ul style="margin-top: 1rem; padding-left: 1rem;">
+                        <li>AI keyword analysis & research</li>
+                        <li>Automated technical SEO audits</li>
+                        <li>Content optimization with AI</li>
+                        <li>Competitor analysis & tracking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <span class="ai-badge">AI-Optimized</span>
+                    <h3>Pay-Per-Click (PPC) Advertising</h3>
+                    <p>Smart bidding strategies and AI-driven ad optimization for Google Ads, Facebook Ads, and LinkedIn campaigns that deliver qualified leads at lower costs.</p>
+                    <ul style="margin-top: 1rem; padding-left: 1rem;">
+                        <li>AI-powered bid management</li>
+                        <li>Automated A/B testing</li>
+                        <li>Smart audience targeting</li>
+                        <li>Real-time performance optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-share-alt"></i></div>
+                    <span class="ai-badge">AI-Automated</span>
+                    <h3>Social Media Marketing (SMM)</h3>
+                    <p>AI-automated social media management across Facebook, Instagram, LinkedIn, and Twitter with smart content scheduling and engagement optimization.</p>
+                    <ul style="margin-top: 1rem; padding-left: 1rem;">
+                        <li>AI content generation & scheduling</li>
+                        <li>Automated engagement responses</li>
+                        <li>Smart hashtag optimization</li>
+                        <li>Influencer identification & outreach</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom, responsive websites built for speed, SEO, and conversions. From WordPress to custom solutions, we create websites that drive business results.</p>
+                    <ul style="margin-top: 1rem; padding-left: 1rem;">
+                        <li>Responsive web design</li>
+                        <li>E-commerce development</li>
+                        <li>WordPress customization</li>
+                        <li>Speed & SEO optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <span class="ai-badge">AI-Generated</span>
+                    <h3>Content Marketing</h3>
+                    <p>AI-assisted content creation including blog posts, social media content, and video scripts that engage your audience and drive organic traffic.</p>
+                    <ul style="margin-top: 1rem; padding-left: 1rem;">
+                        <li>AI content generation</li>
+                        <li>Blog writing & optimization</li>
+                        <li>Video script creation</li>
+                        <li>Content strategy planning</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-video"></i></div>
+                    <h3>Video Production & Editing</h3>
+                    <p>Professional video content creation and editing for social media, YouTube, and marketing campaigns that capture attention and drive engagement.</p>
+                    <ul style="margin-top: 1rem; padding-left: 1rem;">
+                        <li>Video production & editing</li>
+                        <li>Social media video content</li>
+                        <li>YouTube optimization</li>
+                        <li>Animation & motion graphics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Advantage Section -->
+    <section id="ai-advantage" class="ai-advantage">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">The SimkoWeb AI Advantage</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Why choose AI-powered marketing over traditional approaches?</p>
+
+            <div class="ai-features">
+                <div class="ai-feature">
+                    <i class="fas fa-robot" style="font-size: 3rem; color: #F97316; margin-bottom: 1rem;"></i>
+                    <h3>AI Marketing Automation</h3>
+                    <p>Automate repetitive marketing tasks, lead nurturing, and customer communications with intelligent workflows that work 24/7.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <i class="fas fa-chart-line" style="font-size: 3rem; color: #F97316; margin-bottom: 1rem;"></i>
+                    <h3>Predictive Analytics</h3>
+                    <p>AI algorithms analyze customer behavior patterns to predict trends, optimize campaigns, and increase conversion rates.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <i class="fas fa-comments" style="font-size: 3rem; color: #F97316; margin-bottom: 1rem;"></i>
+                    <h3>AI Chatbots & Customer Service</h3>
+                    <p>Deploy intelligent chatbots that handle customer inquiries, qualify leads, and provide 24/7 support to boost customer satisfaction.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <i class="fas fa-brain" style="font-size: 3rem; color: #F97316; margin-bottom: 1rem;"></i>
+                    <h3>Smart Content Optimization</h3>
+                    <p>AI-driven content analysis and optimization that improves engagement rates and search engine rankings automatically.</p>
+                </div>
+            </div>
+
+            <!-- ROI Calculator -->
+            <div class="roi-calculator">
+                <h3 style="color: #1E3A8A; margin-bottom: 1rem; text-align: center;">Calculate Your Potential ROI with AI Marketing</h3>
+                <div class="calculator-inputs">
+                    <input type="number" id="monthly-budget" placeholder="Monthly Marketing Budget (₹)" />
+                    <input type="number" id="current-leads" placeholder="Current Monthly Leads" />
+                    <input type="number" id="conversion-rate" placeholder="Current Conversion Rate (%)" />
+                    <button class="cta-button" onclick="calculateROI()" style="width: 100%;">Calculate AI ROI</button>
+                </div>
+                <div id="roi-result" class="roi-result" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2 class="section-title">Proven Results That Speak Volumes</h2>
+            <p class="section-subtitle">Real success stories from our clients across different industries</p>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-number">450%</div>
+                    <h3>E-commerce ROI Increase</h3>
+                    <p><strong>Client:</strong> Fashion Retailer in Delhi<br>
+                    <strong>Challenge:</strong> Low online sales, poor ad performance<br>
+                    <strong>Solution:</strong> AI-powered PPC campaigns + automated email marketing<br>
+                    <strong>Result:</strong> 450% ROI increase in 6 months</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-number">800%</div>
+                    <h3>Lead Generation Growth</h3>
+                    <p><strong>Client:</strong> Healthcare Clinic Chain<br>
+                    <strong>Challenge:</strong> Limited appointment bookings<br>
+                    <strong>Solution:</strong> AI chatbots + local SEO optimization<br>
+                    <strong>Result:</strong> 800% increase in qualified leads</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-number">300%</div>
+                    <h3>Organic Traffic Boost</h3>
+                    <p><strong>Client:</strong> Real Estate Developer<br>
+                    <strong>Challenge:</strong> Poor search engine visibility<br>
+                    <strong>Solution:</strong> AI-enhanced SEO + content marketing<br>
+                    <strong>Result:</strong> 300% organic traffic increase</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-number">₹15L</div>
+                    <h3>Monthly Revenue Generated</h3>
+                    <p><strong>Client:</strong> B2B Software Company<br>
+                    <strong>Challenge:</strong> Low-quality leads, long sales cycles<br>
+                    <strong>Solution:</strong> AI lead scoring + marketing automation<br>
+                    <strong>Result:</strong> ₹15L monthly recurring revenue</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Expert Team</h2>
+            <p class="section-subtitle">Passionate professionals combining creativity with AI technology</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Ram Babu Das</h3>
+                    <p><strong>Founder & AI Strategy Expert</strong></p>
+                    <p>3+ years in digital marketing, specializing in AI implementation and marketing automation. Google Ads certified professional.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Vimal Kumar</h3>
+                    <p><strong>Marketing Head & SEO Specialist</strong></p>
+                    <p>Expert in technical SEO, content strategy, and organic growth. Certified in Google Analytics and Search Console.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Krishna Joshi</h3>
+                    <p><strong>Creative Director & Video Editor</strong></p>
+                    <p>Specializes in graphic design, video production, and creative campaigns. Adobe Creative Suite expert.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Aditya Singh</h3>
+                    <p><strong>Social Media & AI Automation Expert</strong></p>
+                    <p>Focuses on social media strategy, community management, and AI-powered customer engagement solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Real feedback from businesses that have grown with SimkoWeb</p>
+
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"SimkoWeb's AI-powered marketing completely transformed our online presence. Our e-commerce sales increased by 450% in just 6 months. The AI chatbot alone handles 80% of our customer inquiries!"</p>
+                    <h4>Priya Sharma</h4>
+                    <p>Founder, Fashion Forward Boutique</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The team at SimkoWeb doesn't just deliver results, they deliver intelligent results. Their AI-driven SEO strategy got us to the first page of Google for all our target keywords within 4 months."</p>
+                    <h4>Dr. Amit Kapoor</h4>
+                    <p>Director, HealthCare Plus Clinics</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best investment we made for our business! SimkoWeb's marketing automation saved us 20 hours per week while generating 3x more qualified leads. Their video content is absolutely amazing."</p>
+                    <h4>Rajesh Gupta</h4>
+                    <p>CEO, Delhi Properties Group</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Ready to 3X Your Business Growth?</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Get your free marketing audit and AI strategy consultation today</p>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Get Your Free Marketing Audit</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Website (if any)">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Tell us about your business and marketing goals *" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%;">Get Free Audit Worth ₹10,000</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Our Office</strong><br>
+                            1367/10 First Floor, Govindpuri<br>
+                            New Delhi - 110019, India
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong><br>
+                            +91 9876543210<br>
+                            +91 8765432109
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong><br>
+                            info@simkoweb.com<br>
+                            hello@simkoweb.com
+                        </div>
+                    </div
